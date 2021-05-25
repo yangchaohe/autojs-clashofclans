@@ -1,0 +1,15 @@
+{
+  "assets": [],
+  "build": {
+    "build_id": "643CCF24-2",
+    "build_number": 2,
+    "build_time": 1621347044195
+  },
+  "useFeatures": [],
+  "main": "main.js",
+  "name": "自动刷鱼",
+  "packageName": "com.github.yangchaohe",
+  "scripts": {},
+  "versionCode": 1,
+  "versionName": "1.0.0"
+}
