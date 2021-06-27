@@ -66,7 +66,7 @@ function 搜索(callback) {
             sleep(1000);
         }
         reflash();
-        if (黑 >= 预期_黑 || 水 >= 预期_水 || 金 >= 预期_金) {
+        if (黑 >= 预期_黑 && 水 >= 预期_水 && 金 >= 预期_金) {
             toastLog('满足设定条件');
             ut.铃声();
             // TODO: attack

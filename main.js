@@ -17,7 +17,7 @@ if (!files.exists(search)) {
 }
 var window = floaty.window(
     <frame gravity="center">
-        <button id="action" text="开始运行" w="90" h="45" bg="#77ffffff"/>
+        <button id="action" text="自动搜鱼" w="90" h="45" bg="#77ffffff"/>
     </frame>
 );
 window.setPosition(device.width/2,0);
@@ -26,7 +26,7 @@ setInterval(() => {
     if(engines.all().length>=2){
         window.action.setText('运行中..');
     }else{
-        window.action.setText('开始运行');
+        window.action.setText('自动搜鱼');
     }
 }, 1000);
 
@@ -69,13 +69,13 @@ window.action.setOnTouchListener(function(view, event) {
 });
 
 function startScript(path) {
-    if (window.action.getText() == '开始运行') {
+    if (window.action.getText() == '自动搜鱼') {
         execution = engines.execScriptFile(path);
         window.action.setText('停止运行');
     } else {
         if (execution) {
             execution.getEngine().forceStop();
         }
-        window.action.setText('开始运行');
+        window.action.setText('自动搜鱼');
     }
 }
